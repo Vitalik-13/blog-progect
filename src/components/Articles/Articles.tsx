@@ -1,21 +1,16 @@
 import ArticlesItems from "./ArticlesItems";
 import "./ArticlesItems.css";
 import articleList from "utils/ArrayArticle";
-type Props = {};
-const Articles = (props: Props) => {
+type Props = { changeValue: (isIncrement: boolean) => void };
+const Articles = ({ changeValue }: Props) => {
   return (
     <>
       {articleList.map(
-        ({
-          id,
-          arcitleImage,
-          articleTitle,
-          articleDescription,
-          articleLike,
-        }) => (
+        ({ id, arcitleImage, articleTitle, articleDescription, likeImage }) => (
           <ArticlesItems
+            changeValue={changeValue}
             key={id}
-            articleLike={articleLike}
+            likeImage={likeImage}
             articleTitle={articleTitle}
             articleDescription={articleDescription}
             arcitleImage={arcitleImage}

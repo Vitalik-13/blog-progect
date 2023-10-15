@@ -3,7 +3,7 @@ type Article = {
   articleTitle: string;
   articleDescription: string;
   arcitleImage: string;
-  articleLike: string;
+  likeImage: string;
 };
 
 const articleList: Article[] = [
@@ -13,7 +13,7 @@ const articleList: Article[] = [
     articleTitle: "How To Buy",
     articleDescription:
       "Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere",
-    articleLike: "/images/icons8-лайк-с-заливкой-30.png",
+    likeImage: "/images/icons8-лайк-с-заливкой-30.png",
   },
   {
     id: 2,
@@ -21,7 +21,7 @@ const articleList: Article[] = [
     articleTitle: "How To Return",
     articleDescription:
       "Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere",
-    articleLike: "/images/icons8-лайк-с-заливкой-30.png",
+    likeImage: "/images/icons8-лайк-с-заливкой-30.png",
   },
   {
     id: 3,
@@ -29,7 +29,7 @@ const articleList: Article[] = [
     articleTitle: "Current Sale Off",
     articleDescription:
       "Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere",
-    articleLike: "/images/icons8-лайк-с-заливкой-30.png",
+    likeImage: "/images/icons8-лайк-с-заливкой-30.png",
   },
 ];
 export default articleList;

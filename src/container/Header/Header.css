@@ -39,19 +39,32 @@
 }
 .button-link::after {
   position: absolute;
-  top: 17px;
+  top: 21px;
   left: 0;
+  content: "";
+  width: 0;
+  border: 2px solid transparent;
+  transition: all 0.5s ease;
+}
+.button-link::before {
+  position: absolute;
+  top: -3px;
   right: 0;
   content: "";
   width: 0;
   border: 2px solid transparent;
   transition: all 0.5s ease;
 }
+.button-link:hover::before {
+  width: 95%;
+  border: 2px solid green;
+  border-radius: 10px;
+}
 .button-link:hover {
   color: green;
 }
 .button-link:hover::after {
-  width: 100%;
+  width: 95%;
   border: 2px solid green;
   border-radius: 10px;
 }
@@ -66,19 +79,17 @@
 .image-container {
   position: relative;
 }
-.image-container::before {
+.number {
   position: absolute;
+  top: -11px;
+  right: -10px;
   width: 15px;
   height: 15px;
-  content: "0";
-  font-size: 10px;
-  justify-content: center;
-  z-index: 1;
-  top: -10px;
-  display: flex;
-  align-items: center;
   border-radius: 50%;
   background-color: green;
   color: white;
-  right: -10px;
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
