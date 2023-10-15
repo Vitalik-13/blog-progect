@@ -1,0 +1,29 @@
+/*/*/
+
+.article-container {
+  flex: 0 0 30.33333%;
+  background-color: white;
+}
+
+.information-from-decription {
+  padding: 30px;
+}
+.titel-decription {
+  margin-bottom: 15px;
+  font-size: 28px;
+  font-weight: 600;
+}
+.decription-article {
+  font-size: 18px;
+  line-height: 22px;
+  color: #666;
+  margin-bottom: 15px;
+}
+.button-article {
+  padding: 10px 15px;
+  background-color: #558b2f;
+  font-size: 12px;
+  font-weight: 600;
+  color: white;
+  border: none;
+}
