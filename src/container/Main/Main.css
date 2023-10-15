@@ -6,5 +6,5 @@
 .main-content-whith-article {
   display: flex;
   flex-wrap: wrap;
-  gap: 0 25px;
+  gap: 30px 30px;
 }

@@ -26,4 +26,18 @@
   font-weight: 600;
   color: white;
   border: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.button-article:hover {
+  background-color: #457125;
+}
+.button-and-likes {
+  display: flex;
+  justify-content: space-between;
+}
+.foto-article {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
 }
