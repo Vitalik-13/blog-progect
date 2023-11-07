@@ -3,6 +3,7 @@ import Header from "container/Header/Header";
 import Main from "container/Main/Main";
 import "./reset.css";
 import { useState } from "react";
+import SwiperSlider from "components/SwiperSlider/SwiperSlider";
 
 type Props = {};
 type changeNumber = {
@@ -23,6 +24,7 @@ const App = (props: Props) => {
   return (
     <>
       <Header changeNumber={changeNumber} />
+      <SwiperSlider></SwiperSlider>
       <Main changeValue={changeValue} />
       <Footer />
     </>

@@ -36,8 +36,17 @@
   display: flex;
   justify-content: space-between;
 }
-.foto-article {
+.foto-container {
   width: 100%;
   height: 300px;
+  overflow: hidden;
+}
+.foto-article {
+  width: 100%;
+  height: inherit;
   object-fit: cover;
+  transition: all 0.3s ease;
+}
+.foto-article:hover {
+  transform: scale(1.1);
 }

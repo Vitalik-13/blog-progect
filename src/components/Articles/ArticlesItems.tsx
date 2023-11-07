@@ -33,13 +33,14 @@ const ArticlesItems = ({
 
   return (
     <div className="article-container">
-      <div className="foto-container"></div>
-      <img src={arcitleImage} alt="" className="foto-article" />
+      <div className="foto-container">
+        <img src={arcitleImage} alt="" className="foto-article" />
+      </div>
       <div className="information-from-decription">
         <h4 className="titel-decription">{articleTitle}</h4>
         <p className="decription-article">{articleDescription}</p>
         <div className="button-and-likes">
-          <button className="button-article">SHOP NOW</button>
+          <button className="button-article">LERN MORE</button>
           <img src={likeImage} onClick={changeColor} alt="" />
         </div>
       </div>
