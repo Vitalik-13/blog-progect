@@ -1,5 +1,5 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Navigation } from "swiper/modules";
+import { Pagination, Navigation, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import imgOne from "assets/foto-in-slider-one.jpg";
@@ -20,7 +20,8 @@ const SwiperSlider = (props: Props) => {
         keyboard={true}
         navigation={true}
         loop={true}
-        modules={[Pagination, Navigation]}
+        autoplay={{ delay: 3000, disableOnInteraction: false }}
+        modules={[Pagination, Navigation, Autoplay]}
       >
         <SwiperSlide>
           <img src={imgOne} alt="" className="foto-in-slider" />
